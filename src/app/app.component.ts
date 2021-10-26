@@ -24,7 +24,7 @@ export class AppComponent {
   faCheck = faCheck
   faHardHat = faHardHat
   faCoins = faCoins
-
+  idioma:number = 1
   datos: datos = {
     nombre:"",
     apellido:"",
@@ -82,11 +82,87 @@ export class AppComponent {
 
   ]
 
+
+  idiomaPagina: any = []
+  textos = [
+    "¡Seguro que te da tranquilidad!",
+    "Seguro de auto",
+    "Seguro de Propiedad",
+    "Seguro Comercial",
+    "Seguro de Vida",
+    "Seguro de Salud",
+    "Seguros Dentales",
+    "Beneficios de Empleados",
+    "Taxes" ,
+    "Brindamos soluciones excepcionales para los clientes",
+    "Tranquilidad mental",
+    "Control para la vida",
+    "100% de satisfacion",
+    "Compañia confiable",
+    "¿Preguntas? Llame a Servicio al Cliente",
+    "- Tenemos agentes certificados por el mercado de salud que están disponibles para escuchar y dar respuestas que puedas tener con toda la eficiencia y profesionalismo que tú y tus seres queridos se merecen",
+    "- Nuestros especialistas en servicio al cliente están disponible las 24 horas del día, los 7 días a la semana, en los 365 días del año. Asistencia bilingüe (Inglés / Español) a todos nuestros clientes.",
+    "- Más de 10 años de experiencia en la industria de seguros.",
+    "¿Por que MIT services es su mejor opción?",
+    "- Tenemos agentes certificados por el mercado de salud.",
+    "- Especialistas disponibles 24/7.",
+    "- ¡Puedes ahorrar hasta un 40% con nosotros!",
+    "- No tenemos fees escondidos.",
+    "- Si tienes algún problema estaremos hay para ti.",
+    "Somos su mejor opcion para su seguro de salud",
+    "Compara pólizas entre más de 10 compañías",
+    "Trabajamos con las mejores aseguradoras para ofrecerte las coberturas más extensas y completas en seguros realmente competitivos que te ofrecen la tranquilidad de estar en buenas manos.",
+    "CONTACTANOS",
+    "REDES SOCIALES"
+
+  ]
+
+  texts = [
+    "¡Insurance that gives you a piece of mind!",
+    "Auto ",
+    "Home ",
+    "Commercial ",
+    "Life ",
+    "Health ",
+    "Dental ",
+    "Employment benefits",
+    "Tax" ,
+    "We bring exceptional solutions for our clients",
+    "Piece of mind",
+    "Control of your future",
+    "100% satisfaction",
+    "Exceptional service",
+    "¿ questions ? Call customer service",
+    "- we have agents certified by the marketplace que that available to hear and answer any questions with the professionalism that you and your love ones deserve.",
+    "- our specialists in customer service are available 24 hours the seven days of the week,  365  days of the year. We have bilingual (English/Spanish) agents.",
+    "- Mote than 10 years of experience in the industry",
+    "¿ why  Is MIT services your best option?",
+    "- our agents are certified by the marketplace ",
+    "- specialists available 24/7",
+    "-¡ you can save up to 40% with us ",
+    "- we don’t have any hidden fees ",
+    "- if you encounter any problem we’ll be there for you.",
+    "We are your best option for  healthcare!",
+    "Compare policies with 10 different companies",
+    "We work with the best companies out there to offer the best coverage for your love ones, we offer tranquillity and great savings! You’re in good hands",
+    "CONTACT US",
+    "SOCIAL MEDIA"
+
+  ]
+
+
+
+
+
+
   titulo: string = "INGRESE SUS DATOS"
   texto: string = "* Al momento del envio de sus datos, le contactaremos a la brevedad posible."
 
   constructor(private enviocorreoService :EnviocorreoService ) { }
 
+  ngOnInit(){
+    this.cambioIdioma()
+  }
 
   closeModal() {
     
@@ -139,6 +215,14 @@ export class AppComponent {
       codigopostal:""
     }
     
+  }
+
+  cambioIdioma(){
+    if(this.idioma == 1){
+      this.idiomaPagina = this.textos
+    }else{
+      this.idiomaPagina = this.texts
+    }
   }
  
 }

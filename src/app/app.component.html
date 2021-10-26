@@ -7,41 +7,41 @@
   </div>
   <div class="texto">
     <img src="assets/img/logoBlanco.png" alt="">
-    <p>¡Su seguro de confianza!</p>
+    <p>{{idiomaPagina[0]}}</p>
 
     <div class="seguros">
       <div (click)="openModal(1)" class="tipo">
         <fa-icon [icon]="faCarCrash"></fa-icon>
-        <h3>Seguro de auto</h3>
+        <h3>{{idiomaPagina[1]}}</h3>
       </div>
       <div (click)="openModal(2)" class="tipo">
         <fa-icon [icon]="faHome"></fa-icon>
-        <h3>Seguro de Propiedad</h3>
+        <h3>{{idiomaPagina[2]}}</h3>
       </div>
       <div (click)="openModal(3)" class="tipo">
         <fa-icon [icon]="faTruck"></fa-icon>
-        <h3>Seguro Comercial</h3>
+        <h3>{{idiomaPagina[3]}}</h3>
       </div>
       <div (click)="openModal(4)" class="tipo">
         <fa-icon [icon]="faHeart"></fa-icon>
-        <h3>Seguro de Vida</h3>
+        <h3>{{idiomaPagina[4]}}</h3>
       </div>
 
       <div (click)="openModal(5)" class="tipo">
         <fa-icon [icon]="faHeartbeat"></fa-icon>
-        <h3>Seguro de Salud</h3>
+        <h3>{{idiomaPagina[5]}}</h3>
       </div>
       <div (click)="openModal(6)" class="tipo">
         <fa-icon [icon]="faBriefcaseMedical"></fa-icon>
-        <h3>Seguros Dentales</h3>
+        <h3>{{idiomaPagina[6]}}</h3>
       </div>
       <div (click)="openModal(7)" class="tipo">
         <fa-icon [icon]="faHardHat"></fa-icon>
-        <h3>Beneficios de Empleados</h3>
+        <h3>{{idiomaPagina[7]}}</h3>
       </div>
       <div (click)="openModal(8)" class="tipo">
         <fa-icon [icon]="faCoins"></fa-icon>
-        <h3>Taxes</h3>
+        <h3>{{idiomaPagina[8]}}</h3>
       </div>
     </div>
   </div>
@@ -56,21 +56,21 @@
 <div class="segundaParte">
 
   <div class="texto">
-    <h1>Brindamos soluciones excepcionales para los clientes</h1>
+    <h1>{{idiomaPagina[9]}}</h1>
 
 
     <div class="opciones">
       <p>
-        <fa-icon [icon]="faCheck"></fa-icon> Tranquilidad mental
+        <fa-icon [icon]="faCheck"></fa-icon> {{idiomaPagina[10]}}
       </p>
       <p>
-        <fa-icon [icon]="faCheck"></fa-icon> Control para la vida
+        <fa-icon [icon]="faCheck"></fa-icon> {{idiomaPagina[11]}}
       </p>
       <p>
-        <fa-icon [icon]="faCheck"></fa-icon> 100% de satisfacion
+        <fa-icon [icon]="faCheck"></fa-icon> {{idiomaPagina[12]}}
       </p>
       <p>
-        <fa-icon [icon]="faCheck"></fa-icon> Compañia confiable
+        <fa-icon [icon]="faCheck"></fa-icon> {{idiomaPagina[13]}}
       </p>
     </div>
 
@@ -87,19 +87,16 @@
   </div>
   <div class="texto">
 
-    <h1>¿Preguntas? Llame a Servicio al Cliente</h1>
+    <h1>{{idiomaPagina[14]}}</h1>
     <div class="llamar">
       <a href="tel:+8009378014">
         <fa-icon [icon]="faPhone"></fa-icon>
         +(800) 937-8014
       </a>
     </div>
-    <p>- Tenemos agentes certificados por el mercado de salud que están disponibles para escuchar y dar respuestas que
-      puedas tener con toda la eficiencia y profesionalismo que tú y tus seres queridos se merecen</p>
-    <p>- Nuestros especialistas en servicio al cliente están disponible las 24 horas del día, los 7 días a la semana, en
-      los 365 días del año.
-      Asistencia bilingüe (Inglés / Español) a todos nuestros clientes.</p>
-    <p>- Más de 10 años de experiencia en la industria de seguros.</p>
+    <p>{{idiomaPagina[15]}}</p>
+    <p>{{idiomaPagina[16]}}</p>
+    <p>{{idiomaPagina[17]}}</p>
   </div>
 
 </div>
@@ -111,12 +108,12 @@
 <div class="quintaParte">
 
   <div class="texto">
-    <h1>¿Por que MIT services es su mejor opción? </h1>
-    <p>- Tenemos agentes certificados por el mercado de salud. </p>
-    <p>- Especialistas disponibles 24/7.</p>
-    <p>- ¡Puedes ahorrar hasta un 40% con nosotros!</p>
-    <p>- No tenemos fees escondidos .</p>
-    <p>- Si tienes algún problema estaremos hay para ti.</p>
+    <h1>{{idiomaPagina[18]}} </h1>
+    <p>{{idiomaPagina[19]}} </p>
+    <p>{{idiomaPagina[20]}}</p>
+    <p>{{idiomaPagina[21]}}</p>
+    <p>{{idiomaPagina[22]}}</p>
+    <p>{{idiomaPagina[23]}}</p>
   </div>
   <div class="imagen">
     <img src="assets/img/opcion.png" alt="">
@@ -135,7 +132,7 @@
   </div>
   <div class="texto">
 
-    <h1>Somos su mejor opcion para su seguro de salud</h1>
+    <h1>{{idiomaPagina[24]}}</h1>
 
     <div class="marcas">
       <div class="imagen"><img src="assets/img/ambetter.png" alt=""></div>
@@ -182,9 +179,8 @@
 <div class="sextaParte">
 
   <div class="texto">
-    <h1>Compara pólizas entre más de 10 compañías</h1>
-    <p>Trabajamos con las mejores aseguradoras para ofrecerte las coberturas más extensas y completas en seguros
-      realmente competitivos que te ofrecen la tranquilidad de estar en buenas manos.</p>
+    <h1>{{idiomaPagina[25]}}</h1>
+    <p>{{idiomaPagina[26]}}</p>
   </div>
   <div class="imagen">
 
@@ -194,28 +190,28 @@
 <div class="footer">
   <div class="primeraParteFooter">
     <div class="izquierda">
-      <h3>SEGUROS MANATEE</h3>
+      <h3>MIT SERVICES</h3>
 
-      <a href="#">Seguro de Auto</a>
-      <a href="#">Seguro de Propiedad</a>
-      <a href="#">Seguro Comercial</a>
-      <a href="#">Seguro de Vida</a>
-      <a href="#">Seguro de Salud</a>
-      <a href="#">Ventaja de Medicare</a>
+      <a href="#">{{idiomaPagina[1]}}</a>
+      <a href="#">{{idiomaPagina[2]}}</a>
+      <a href="#">{{idiomaPagina[3]}}</a>
+      <a href="#">{{idiomaPagina[4]}}</a>
+      <a href="#">{{idiomaPagina[5]}}</a>
+      <a href="#">{{idiomaPagina[6]}}</a>
 
     </div>
     <div class="centro">
-      <h3>CONTACTANOS</h3>
+      <h3>{{idiomaPagina[27]}}</h3>
 
       <a href="#">+1 855 457 2583</a>
 
       <h3>EMAIL</h3>
 
-      <a href="#">segurosmanatee@gmail.com</a>
+      <a href="#">MITservices.josem@gmail.com</a>
 
     </div>
     <div class="derecha">
-      <h3>REDES SOCIALES</h3>
+      <h3>{{idiomaPagina[28]}}</h3>
       <div class="social">
 
         <a target="_blank" href="https://www.instagram.com/segurosmanateefl/"> <img class="img-responsive"
@@ -252,9 +248,9 @@
 
 <div class="logo">
   <img src="assets/img/logo2.png" alt="">
-  <select name="select">
-    <option value="es">Español</option>
-    <option value="en" selected>Ingles</option>
+  <select [(ngModel)]="idioma" (change)="cambioIdioma()" name="select">
+    <option value="1">Español</option>
+    <option value="2" selected>Ingles</option>
   </select>
 </div>
 <div class="boton">
